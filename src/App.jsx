@@ -25,32 +25,32 @@ const SECTIONS = [
   {
     id: 'home',
     title: 'Explore',
-    subtitle: 'System',
+    subtitle: 'Full Stack Engineer',
     icon: Gamepad2,
     bgImage: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop',
-    logoText: 'PLAYER ONE',
-    description: 'Welcome to the main hub. Level 99 Full-Stack Developer ready for the next campaign. Experience high-performance web applications and seamless user interfaces.',
-    primaryAction: 'Start Game (Resume)',
+    logoText: 'NEIL LEWIS',
+    description: 'Versatile Full Stack Engineer specializing in Angular, .NET, Python, and Azure. Building scalable, secure, and high-performance systems — from pixel-perfect UI/UX to cloud infrastructure and ML-driven cost optimization.',
+    primaryAction: 'View Resume',
   },
   {
     id: 'projects',
     title: 'Library',
-    subtitle: 'Games & Apps',
+    subtitle: 'Projects & Work',
     icon: Briefcase,
     bgImage: 'https://images.unsplash.com/photo-1614729939124-032f0b56c9ce?q=80&w=2070&auto=format&fit=crop',
     logoText: 'PROJECT ARCHIVE',
-    description: 'A collection of completed campaigns and ongoing side-quests. Browse through various full-stack applications, interactive UI designs, and system architectures.',
-    primaryAction: 'Browse Library',
+    description: 'Enterprise projects built at Schneider Electric — Azure infrastructure tooling, cloud dashboards, inventory management, ML optimization models, and fully-automated CI/CD pipelines.',
+    primaryAction: 'Browse Projects',
   },
   {
     id: 'skills',
     title: 'Trophies',
-    subtitle: 'Skills & Achievements',
+    subtitle: 'Skills & Certifications',
     icon: Trophy,
     bgImage: 'https://images.unsplash.com/photo-1618365908648-e71bd5716cba?q=80&w=2070&auto=format&fit=crop',
     logoText: 'SKILL TREE',
-    description: 'Unlocked abilities and mastered technologies. View the complete trophy collection detailing frontend, backend, and deployment expertise.',
-    primaryAction: 'View All Trophies',
+    description: 'Full-stack arsenal: Angular, TypeScript, .NET Core, Node.js, Python, Azure, Docker, Terraform, and Figma. Microsoft Certified Azure Developer Associate.',
+    primaryAction: 'View All Skills',
   },
   {
     id: 'experience',
@@ -59,7 +59,7 @@ const SECTIONS = [
     icon: Code2,
     bgImage: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop',
     logoText: 'CAREER LOG',
-    description: 'Recent activities, previous factions joined, and major milestones achieved throughout the professional journey.',
+    description: 'Engineer at Schneider Electric (2022–2025). Pursuing M.Tech Software Engineering at MIT Manipal (8.6 CGPA). Microsoft Certified Azure Developer Associate (2024).',
     primaryAction: 'View Timeline',
   },
   {
@@ -69,23 +69,65 @@ const SECTIONS = [
     icon: Mail,
     bgImage: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop',
     logoText: 'MULTIPLAYER',
-    description: 'Looking for a co-op partner? Send a friend request or direct message to initiate a new professional collaboration.',
+    description: 'Looking for a co-op partner? Connect on GitHub, LinkedIn, or drop a direct message to start a new professional collaboration.',
     primaryAction: 'Send Message',
   }
 ];
 
 const PROJECTS = [
-  { id: 1, title: 'Cyber UI', type: 'Frontend', completion: '100%', image: 'https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=800&auto=format&fit=crop' },
-  { id: 2, title: 'Nexus Backend', type: 'API', completion: '100%', image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=800&auto=format&fit=crop' },
-  { id: 3, title: 'Cloud Sync', type: 'DevOps', completion: '85%', image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop' },
-  { id: 4, title: 'Quantum App', type: 'Mobile', completion: 'In Progress', image: 'https://images.unsplash.com/photo-1614729939124-032f0b56c9ce?q=80&w=800&auto=format&fit=crop' },
+  { id: 1, title: 'Blueprints App', type: 'Full Stack', completion: '100%', tech: 'Angular · .NET · MongoDB · Azure', image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop' },
+  { id: 2, title: 'Azure Dashboards', type: 'Frontend', completion: '100%', tech: 'Angular · Highcharts · Grafana', image: 'https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=800&auto=format&fit=crop' },
+  { id: 3, title: 'Inventory Builder', type: 'Frontend', completion: '100%', tech: 'Angular · Python · Azure', image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=800&auto=format&fit=crop' },
+  { id: 4, title: 'CI/CD Automation', type: 'DevOps', completion: '100%', tech: 'Python · GitHub Actions · Terraform · Jira', image: 'https://images.unsplash.com/photo-1614729939124-032f0b56c9ce?q=80&w=800&auto=format&fit=crop' },
+  { id: 5, title: 'Org Provisioning API', type: 'Backend', completion: '100%', tech: '.NET · Azure · RBAC', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop' },
+  { id: 6, title: 'ML VM Optimizer', type: 'ML / Python', completion: '100%', tech: 'Python · Azure Monitor · ML', image: 'https://images.unsplash.com/photo-1618365908648-e71bd5716cba?q=80&w=800&auto=format&fit=crop' },
 ];
 
-const TROPHIES = [
-  { id: 1, title: 'React Master', grade: 'Platinum', desc: 'Build 50+ complex components', icon: Code2, color: 'text-blue-300' },
-  { id: 2, title: 'TypeScript Guru', grade: 'Gold', desc: 'Achieve 0 type any errors', icon: FileCode2 => <span className="font-bold font-mono">TS</span>, color: 'text-yellow-400' },
-  { id: 3, title: 'Node.js Architect', grade: 'Gold', desc: 'Deploy a scalable microservice', icon: Settings, color: 'text-yellow-400' },
-  { id: 4, title: 'CSS Wizard', grade: 'Silver', desc: 'Create a pixel-perfect layout', icon: Star, color: 'text-gray-300' },
+const SKILLS = [
+  { id: 1, title: 'Frontend', grade: 'Platinum', desc: 'Angular · TypeScript · D3.js · Tailwind · Bootstrap · HTML/CSS', icon: Code2, color: 'text-blue-300' },
+  { id: 2, title: 'Backend', grade: 'Gold', desc: '.NET Core · C# · Node.js · Express.js · Python · LINQ', icon: Settings, color: 'text-yellow-400' },
+  { id: 3, title: 'Databases', grade: 'Gold', desc: 'MongoDB · MySQL · Azure Cosmos DB', icon: Star, color: 'text-yellow-400' },
+  { id: 4, title: 'DevOps & Cloud', grade: 'Platinum', desc: 'Azure · Docker · Terraform · GitHub Actions · Azure DevOps · Linux', icon: Wifi, color: 'text-blue-300' },
+  { id: 5, title: 'UI/UX Design', grade: 'Silver', desc: 'Figma · Adobe Creative Suite · Canva', icon: Gamepad2, color: 'text-gray-300' },
+  { id: 6, title: 'Azure Certified', grade: 'Platinum', desc: 'Azure Developer Associate · ID: 995510485 · Passed 2024', icon: Trophy, color: 'text-blue-300' },
+];
+
+const ACHIEVEMENTS = [
+  { id: 1, label: 'Best Graduate Engineer Trainee', year: '2022', color: 'text-yellow-400' },
+  { id: 2, label: 'Accelerator Award', year: '2024', color: 'text-yellow-400' },
+  { id: 3, label: 'Azure Developer Associate', year: '2024', color: 'text-blue-300' },
+  { id: 4, label: 'R&D Day – 1st Place', year: '2023', color: 'text-green-400' },
+  { id: 5, label: 'AI/ML Research Paper – ETAP Recognition', year: '2024', color: 'text-purple-400' },
+];
+
+const EXPERIENCE = [
+  {
+    id: 1,
+    role: 'Engineer',
+    company: 'Schneider Electric',
+    period: '2022 – 2025',
+    highlights: [
+      'Blueprints App — Azure infra design & deployment tool',
+      'Azure Dashboards — real-time cloud monitoring',
+      'Org API — reduced provisioning 97% (2 days → 45 min)',
+      'CI/CD — automated 25+ Azure resources via Terraform',
+      'ML VM Optimizer — cost savings via Python & Azure Monitor',
+    ],
+  },
+  {
+    id: 2,
+    role: 'M.Tech Software Engineering',
+    company: 'MIT Manipal, Karnataka',
+    period: '2023 – 2025',
+    highlights: ['8.6 CGPA (as of 2nd Semester)', 'Pursuing'],
+  },
+  {
+    id: 3,
+    role: 'B.Tech Electronics & Communication',
+    company: 'CMR Institute of Technology, Karnataka',
+    period: '2018 – 2022',
+    highlights: ['7.45 CGPA'],
+  },
 ];
 
 // --- COMPONENTS ---
@@ -104,7 +146,7 @@ const TopBar = () => {
         <div className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-gradient-to-tr from-blue-500 to-purple-500 flex items-center justify-center border-2 border-white/50 shadow-[0_0_10px_rgba(59,130,246,0.5)]">
           <User size={16} className="text-white" />
         </div>
-        <span className="font-medium text-xs md:text-sm tracking-wide">Player1_Dev</span>
+        <span className="font-medium text-xs md:text-sm tracking-wide">NeilLewis_Dev</span>
       </div>
       
       <div className="flex items-center space-x-3 md:space-x-5 px-2 md:px-4 py-2">
@@ -320,6 +362,7 @@ export default function App() {
                     <div className="absolute bottom-3 left-4">
                       <p className="text-xs font-mono text-blue-400 mb-1">{proj.type}</p>
                       <h3 className="text-white font-bold">{proj.title}</h3>
+                      <p className="text-gray-300 text-xs mt-0.5 hidden sm:block">{proj.tech}</p>
                     </div>
                     <div className="absolute top-3 right-4 bg-black/60 backdrop-blur px-2 py-1 rounded text-xs font-bold text-white">
                       {proj.completion}
@@ -332,16 +375,16 @@ export default function App() {
            {/* Section: Skills (Trophies) */}
            {activeSection.id === 'skills' && (
              <div className="flex space-x-3 sm:space-x-6 overflow-x-auto pb-4 scrollbar-hide animate-fade-in items-center h-full">
-                {TROPHIES.map((trophy) => (
-                  <div key={trophy.id} className="flex items-center space-x-3 sm:space-x-4 bg-gray-900/50 backdrop-blur px-4 py-3 sm:px-6 sm:py-4 rounded-xl border border-white/5 min-w-[220px] sm:min-w-[300px] hover:bg-gray-800/80 transition-colors cursor-default">
-                    <div className={`w-14 h-14 rounded-full bg-black/50 border-2 ${trophy.grade === 'Platinum' ? 'border-blue-300' : trophy.grade === 'Gold' ? 'border-yellow-400' : 'border-gray-300'} flex items-center justify-center`}>
-                       <trophy.icon size={24} className={trophy.color} />
+                {SKILLS.map((skill) => (
+                  <div key={skill.id} className="flex items-center space-x-3 sm:space-x-4 bg-gray-900/50 backdrop-blur px-4 py-3 sm:px-6 sm:py-4 rounded-xl border border-white/5 min-w-[220px] sm:min-w-[300px] hover:bg-gray-800/80 transition-colors cursor-default">
+                    <div className={`w-14 h-14 rounded-full bg-black/50 border-2 ${skill.grade === 'Platinum' ? 'border-blue-300' : skill.grade === 'Gold' ? 'border-yellow-400' : 'border-gray-300'} flex items-center justify-center`}>
+                       <skill.icon size={24} className={skill.color} />
                     </div>
                     <div>
                       <h4 className="text-white font-bold flex items-center gap-2">
-                        {trophy.title} 
+                        {skill.title}
                       </h4>
-                      <p className="text-gray-400 text-sm">{trophy.desc}</p>
+                      <p className="text-gray-400 text-sm">{skill.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -351,7 +394,7 @@ export default function App() {
            {/* Section: Contact */}
            {activeSection.id === 'contact' && (
              <div className="flex space-x-3 sm:space-x-6 h-full items-start animate-fade-in">
-                <button className="flex flex-col items-center justify-center w-24 h-24 sm:w-36 sm:h-36 bg-blue-600/20 hover:bg-blue-600/40 border border-blue-500/30 rounded-2xl transition-all group backdrop-blur-sm">
+                <button onClick={() => window.open('https://github.com/neillewisproject', '_blank', 'noopener,noreferrer')} className="flex flex-col items-center justify-center w-24 h-24 sm:w-36 sm:h-36 bg-blue-600/20 hover:bg-blue-600/40 border border-blue-500/30 rounded-2xl transition-all group backdrop-blur-sm">
                   <Github size={24} className="text-blue-400 mb-2 sm:mb-3 group-hover:scale-110 transition-transform" />
                   <span className="text-white font-medium text-sm">GitHub</span>
                 </button>
@@ -359,22 +402,44 @@ export default function App() {
                   <ExternalLink size={24} className="text-blue-300 mb-2 sm:mb-3 group-hover:scale-110 transition-transform" />
                   <span className="text-white font-medium text-sm">LinkedIn</span>
                 </button>
-                <button className="flex flex-col items-center justify-center w-24 h-24 sm:w-36 sm:h-36 bg-purple-500/20 hover:bg-purple-500/40 border border-purple-400/30 rounded-2xl transition-all group backdrop-blur-sm">
+                <button onClick={() => window.location.href = 'mailto:lewisneil2000@gmail.com'} className="flex flex-col items-center justify-center w-24 h-24 sm:w-36 sm:h-36 bg-purple-500/20 hover:bg-purple-500/40 border border-purple-400/30 rounded-2xl transition-all group backdrop-blur-sm">
                   <Mail size={24} className="text-purple-300 mb-2 sm:mb-3 group-hover:scale-110 transition-transform" />
                   <span className="text-white font-medium text-sm">Email</span>
                 </button>
              </div>
            )}
 
-           {/* Generic Home/Experience prompt if empty */}
-           {(activeSection.id === 'home' || activeSection.id === 'experience') && (
-              <div className="h-full flex items-center text-gray-400 animate-fade-in">
-                <p className="flex items-center gap-2 text-xs sm:text-sm">
-                  <span className="hidden sm:inline-flex w-4 h-4 rounded-full border border-gray-400 items-center justify-center text-[8px]">R1</span>
-                  <span className="sm:hidden">Swipe left or right to navigate sections.</span>
-                  <span className="hidden sm:inline">Press Enter to select · Arrow Keys to navigate.</span>
-                </p>
-              </div>
+           {/* Section: Experience */}
+           {activeSection.id === 'experience' && (
+             <div className="flex space-x-3 sm:space-x-4 overflow-x-auto pb-4 scrollbar-hide animate-fade-in items-start h-full">
+               {EXPERIENCE.map((exp) => (
+                 <div key={exp.id} className="flex-shrink-0 min-w-[260px] sm:min-w-[320px] bg-gray-900/60 backdrop-blur border border-white/10 rounded-xl px-4 py-3 sm:px-5 sm:py-4 hover:border-white/30 transition-colors">
+                   <p className="text-xs font-mono text-blue-400 mb-1">{exp.period}</p>
+                   <h3 className="text-white font-bold text-sm">{exp.role}</h3>
+                   <p className="text-gray-400 text-xs mb-2">{exp.company}</p>
+                   <ul className="space-y-1">
+                     {exp.highlights.map((h, i) => (
+                       <li key={i} className="text-gray-300 text-xs flex items-start gap-1.5">
+                         <span className="text-blue-400 mt-0.5">›</span>{h}
+                       </li>
+                     ))}
+                   </ul>
+                 </div>
+               ))}
+             </div>
+           )}
+
+           {/* Section: Home — Achievements */}
+           {activeSection.id === 'home' && (
+             <div className="flex space-x-2 sm:space-x-3 overflow-x-auto pb-4 scrollbar-hide animate-fade-in items-center h-full">
+               {ACHIEVEMENTS.map((a) => (
+                 <div key={a.id} className="flex-shrink-0 flex items-center gap-2 bg-gray-900/60 backdrop-blur border border-white/10 rounded-full px-3 py-2 sm:px-4 sm:py-2.5 hover:border-white/30 transition-colors">
+                   <Trophy size={13} className={a.color} />
+                   <span className="text-white text-xs font-medium whitespace-nowrap">{a.label}</span>
+                   <span className="text-gray-500 text-xs">{a.year}</span>
+                 </div>
+               ))}
+             </div>
            )}
 
         </div>
