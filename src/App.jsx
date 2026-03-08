@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { 
   User, 
-  Search, 
+  Search,
+  Settings,
   BatteryFull, 
   Wifi, 
   Trophy, 
